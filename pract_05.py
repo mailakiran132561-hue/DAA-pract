@@ -23,3 +23,21 @@ wt = [1, 3, 4, 5]
 val = [1, 4, 5, 7]
 W = 7
 print(knapsack(W, wt, val))
+Time Analysis:
+Derivation of Time Complexity:
+Let n be the number of items and W be the knapsack capacity.
+The DP table contains (n + 1) rows and (W + 1) columns.
+Number of states = (n + 1)(W + 1)
+The two nested loops visit every non-base state once.
+For each state, only constant-time comparisons, additions and max operations are performed.
+T(n,W) = c · n · (W + 1) + c0
+T(n,W) = Θ(nW)
+The table stores (n + 1)(W + 1) integer values.
+S(n,W) = Θ(nW)
+This is pseudo-polynomial because W is a numeric capacity, not the number of bits needed to encode W
+Final Time Analysis:
+• Time Complexity: Θ(nW).
+• Space Complexity: Θ(nW).
+Result:
+The 0/1 Knapsack problem was solved using dynamic programming, and its complexity was derived
+from the number of DP states.
