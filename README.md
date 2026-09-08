@@ -1,1 +1,1 @@
-# practial-02
+# practials
